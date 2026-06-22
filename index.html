@@ -3,59 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Plans</title>
+    <title>Pricing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cards-container">
-        <div class="card">
-            <h1 class="card-title">Hobby</h1>
-            <p class="card-price">Free</p>
-            <div class="card-content">
-                <p class="includes-text">Includes:</p>
-                <ul class="features-list">
-                    <li>
-                        <span class="checkmark">✓</span>
-                        No credit card required
-                    </li>
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Limited Agent requests
-                    </li>
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Limited Tab completions
-                    </li>
-                </ul>
+    <main class="pricing-page">
+        <header class="pricing-header">
+            <h1 class="page-title">Pricing</h1>
+            <div class="billing-toggle" role="group" aria-label="Billing period">
+                <button class="toggle-option active" type="button">Monthly</button>
+                <button class="toggle-option" type="button">Yearly</button>
             </div>
-            <button class="download-button">Download</button>
+        </header>
+
+        <div class="cards-container">
+            <article class="card">
+                <h2 class="card-title">Hobby</h2>
+                <p class="card-price">Free</p>
+                <div class="card-content">
+                    <p class="includes-text">Includes:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            No credit card required
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Limited Agent requests
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Limited Tab completions
+                        </li>
+                    </ul>
+                </div>
+                <button class="card-button" type="button">Download</button>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Individual</h2>
+                <p class="card-price">$20<span class="price-period">/mo.</span></p>
+                <div class="plan-toggle" role="group" aria-label="Individual plan">
+                    <button class="toggle-option active" type="button">Pro</button>
+                    <button class="toggle-option" type="button">Pro+</button>
+                    <button class="toggle-option" type="button">Ultra</button>
+                </div>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Hobby, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Extended limits on Agent
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Access to frontier models
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            MCPs, skills, and hooks
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Cloud agents
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Bugbot on usage-based billing
+                        </li>
+                    </ul>
+                </div>
+                <button class="card-button card-button-primary" type="button">Get Pro</button>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Teams</h2>
+                <p class="card-price">$40<span class="price-period">/user/mo.</span></p>
+                <div class="plan-toggle" role="group" aria-label="Teams plan">
+                    <button class="toggle-option active" type="button">Standard</button>
+                    <button class="toggle-option" type="button">Premium</button>
+                </div>
+                <div class="card-content">
+                    <p class="includes-text">Everything on Individual, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Centralized team billing and administration
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Team marketplace for internal rules, skills, and plugins
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Agentic code reviews with Bugbot
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Cloud agents and automations with shared team context
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Usage analytics to understand team behavior
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Team-wide privacy mode
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            SAML/OIDC SSO
+                        </li>
+                    </ul>
+                </div>
+                <button class="card-button" type="button">Get Teams</button>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Enterprise</h2>
+                <p class="card-price">Custom</p>
+                <div class="card-content">
+                    <p class="includes-text">Everything on Teams, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Pooled usage
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Invoice/PO billing
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            SCIM seat management
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Repository, model, and MCP access controls
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Auto-run, browser, and network controls
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Audit logs and service accounts
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            AI code tracking API
+                        </li>
+                        <li>
+                            <span class="checkmark" aria-hidden="true">✓</span>
+                            Priority support and account management
+                        </li>
+                    </ul>
+                </div>
+                <button class="card-button" type="button">Contact Sales</button>
+            </article>
         </div>
-        <div class="card">
-            <h1 class="card-title">Pro</h1>
-            <p class="card-price">$20/mo.</p>
-            <div class="card-content">
-                <p class="includes-text">Everything in Hobby, plus:</p>
-                <ul class="features-list">
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Extended limits on Agent
-                    </li>
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Unlimited Tab completions
-                    </li>
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Background Agents
-                    </li>
-                    <li>
-                        <span class="checkmark">✓</span>
-                        Maximum context windows
-                    </li>
-                </ul>
-            </div>
-            <button class="download-button">Get Pro</button>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
