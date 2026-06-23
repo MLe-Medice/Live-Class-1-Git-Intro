@@ -72,7 +72,7 @@ body {
 }
 
 .toggle-option:hover:not(.active) {
-    background-color: rgba(165, 198, 211, 0.04);
+ background-color: rgba(165, 198, 211, 0.04);
 }
 
 .cards-container {
@@ -106,6 +106,7 @@ body {
 
 .price-period {
     color: #6f6e69;
+    margin-left: 4px;
 }
 
 .card-content {
@@ -151,22 +152,22 @@ body {
     font-size: 14px;
     font-weight: 500;
     color: #26251e;
-    background-color: #e6e5e0;
+    background-color: #e0f5ff;
     cursor: pointer;
     transition: background-color 0.15s ease;
 }
 
 .card-button:hover {
-    background-color: #dedcd6;
+    background-color: #cceaf9;
 }
 
 .card-button-primary {
-    background-color: #26251e;
-    color: #f7f7f4;
+    background-color: #e0f5ff;
+    color: #26251e;
 }
 
 .card-button-primary:hover {
-    background-color: #3a3933;
+    background-color: #cceaf9;
 }
 
 @media (max-width: 1100px) {
